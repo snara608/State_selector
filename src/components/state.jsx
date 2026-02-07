@@ -31,7 +31,7 @@ function StateSelector() {
     }, [])
 
     useEffect(() => {
-        if(selectedCountry) return;
+        if(!selectedCountry) return;
 
         const getAllStates = async () => {
             try{
@@ -83,7 +83,7 @@ function StateSelector() {
                 </select>
                 <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)} disabled={!selectedState}>
                     <option value="" disabled>Select a City</option>
-                    {cities.map((city) => <option key={city} value={city}>{city}</option>)}
+                    {Array.isArray(cities) && cities.map((city) => <option key={city} value={city}>{city}</option>)}
                 </select>
             </div>
             {selectedCity && (
