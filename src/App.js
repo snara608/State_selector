@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import StateSelector from './components/state';
 

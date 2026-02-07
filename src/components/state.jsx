@@ -1,4 +1,4 @@
-import react from "react";
+
 import "./state.css";
 import { useEffect, useState } from "react";
 
