@@ -88,8 +88,8 @@ function StateSelector() {
             </div>
             {selectedCity && (
                 <h3>
-                    You have selected <span>{selectedCity}</span>
-                    <span>{selectedState}, {selectedCountry}</span>
+                    You selected <span>{selectedCity},</span>
+                    <span> {selectedState}, {selectedCountry} </span>
                  
                 </h3>
             )}
