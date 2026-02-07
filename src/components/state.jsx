@@ -88,10 +88,9 @@ function StateSelector() {
             </div>
             {selectedCity && (
                 <h3>
-                    You selected <span>{selectedCity}, {selectedState}, {selectedCountry} </span>
-                    {/* <span> {selectedState}, {selectedCountry} </span> */}
-                 
-                </h3>
+                You selected <span style={{ fontWeight: "bold" }}>{selectedCity},</span>
+                <span style={{ color: "gray" }}> {selectedState}, {selectedCountry}</span>
+            </h3>
             )}
 
 
