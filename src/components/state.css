@@ -1,0 +1,7 @@
+.State-Selector {
+    display: flex;
+    flex-direction: column; /* Stacks heading, dropdowns, and message vertically */
+    align-items: center;    /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically (requires height) */
+    text-align: center;
+}
